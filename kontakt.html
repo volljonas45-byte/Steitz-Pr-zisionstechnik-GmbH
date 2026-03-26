@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – steitz präzisionstechnik</title>
+  <meta name="description" content="Kontaktieren Sie steitz präzisionstechnik. Anfragen zu OmniTURN, Sondermaschinen, Preisliste und Infopaket." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ───────────────────────────────────────── -->
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-main">steitz<span style="color:#C8102E;">.</span></span>
+      <span class="nav__logo-sub">Präzisionstechnik</span>
+    </a>
+    <button class="nav__toggle" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__menu">
+      <li class="nav__item"><a href="index.html" class="nav__link">Startseite</a></li>
+      <li class="nav__item">
+        <a href="omniturn.html" class="nav__link">OmniTURN</a>
+        <div class="nav__dropdown">
+          <a href="omniturn.html#grundlagen">Gewindeprüfung – Grundlagen</a>
+          <a href="omniturn.html#produkte">Produkte (OmniTURN 1 &amp; 2)</a>
+          <a href="omniturn.html#zubehoer">Zubehör</a>
+          <a href="omniturn.html#anwendungen">Anwendungen</a>
+          <a href="omniturn.html#amortisation">Amortisation</a>
+          <a href="omniturn.html#technische-daten">Technische Daten &amp; Preise</a>
+        </div>
+      </li>
+      <li class="nav__item"><a href="sondermaschinen.html" class="nav__link">Sondermaschinen</a></li>
+      <li class="nav__item"><a href="unternehmen.html" class="nav__link">Unternehmen</a></li>
+      <li class="nav__item"><a href="kontakt.html" class="nav__link active">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── Page Hero ─────────────────────────────────────────── -->
+<div class="breadcrumb">
+  <div class="breadcrumb__inner">
+    <a href="index.html">Startseite</a>
+    <span class="breadcrumb__sep">/</span>
+    <span>Kontakt</span>
+  </div>
+</div>
+<section class="page-hero">
+  <div class="page-hero__inner">
+    <div class="page-hero__label">Wir freuen uns auf Ihre Anfrage</div>
+    <h1>Kontakt</h1>
+    <p class="page-hero__text">
+      Haben Sie Fragen zu unseren Produkten, möchten Sie ein Angebot anfragen oder
+      unser Informationspaket anfordern? Wir helfen Ihnen gerne weiter.
+    </p>
+  </div>
+</section>
+
+<!-- ── Kontakt ───────────────────────────────────────────── -->
+<section class="content-section">
+  <div class="container">
+    <div class="grid-2" style="gap:4rem; align-items:start;">
+
+      <!-- Kontaktformular -->
+      <div data-reveal>
+        <span class="section-label-text">Schreiben Sie uns</span>
+        <h2 style="margin-bottom:2rem;">Ihre <em class="text-red">Anfrage</em></h2>
+        <form class="contact-form">
+          <div class="grid-2" style="gap:1rem;">
+            <div class="form-group">
+              <label class="form-label">Vorname *</label>
+              <input type="text" class="form-control" placeholder="Max" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Nachname *</label>
+              <input type="text" class="form-control" placeholder="Mustermann" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Unternehmen</label>
+            <input type="text" class="form-control" placeholder="Ihr Unternehmen" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">E-Mail-Adresse *</label>
+            <input type="email" class="form-control" placeholder="max@unternehmen.de" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Telefon</label>
+            <input type="tel" class="form-control" placeholder="+49 000 000000" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Betreff</label>
+            <select class="form-control form-select">
+              <option value="">Bitte wählen...</option>
+              <option>Anfrage OmniTURN 1</option>
+              <option>Anfrage OmniTURN 2</option>
+              <option>Anfrage Sondermaschine</option>
+              <option>Preisliste anfordern</option>
+              <option>Infopaket anfordern</option>
+              <option>Händlerregistrierung</option>
+              <option>Technische Frage</option>
+              <option>Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Ihre Nachricht *</label>
+            <textarea class="form-control" placeholder="Beschreiben Sie Ihr Anliegen..." required></textarea>
+          </div>
+          <div class="form-group" style="display:flex; align-items:flex-start; gap:0.75rem;">
+            <input type="checkbox" id="datenschutz" required style="margin-top:3px; flex-shrink:0;" />
+            <label for="datenschutz" style="font-size:0.82rem; color:#6b7280; cursor:pointer;">
+              Ich habe die <a href="datenschutz.html" style="color:var(--red);">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            Nachricht senden
+          </button>
+        </form>
+      </div>
+
+      <!-- Kontaktinfo -->
+      <div data-reveal>
+        <span class="section-label-text">Kontaktdaten</span>
+        <h2 style="margin-bottom:2rem;">Direkt <em class="text-red">erreichen</em></h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Adresse</div>
+              <div class="contact-item__value">
+                steitz präzisionstechnik<br />
+                [Straße und Hausnummer]<br />
+                [PLZ] [Stadt], Deutschland
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">Telefon</div>
+              <div class="contact-item__value">[Telefonnummer]</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-item__label">E-Mail</div>
+              <div class="contact-item__value">[info@steitz-praezision.de]</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem; padding-top:2rem; border-top:1px solid var(--gray-light);">
+          <h3 style="margin-bottom:1rem;">Händlerregistrierung</h3>
+          <p style="font-size:0.9rem; margin-bottom:1rem;">
+            Interesse am Vertrieb unserer Produkte? Registrieren Sie sich als autorisierter
+            Händler und profitieren Sie von unseren Konditionen und Unterstützungsleistungen.
+          </p>
+          <a href="mailto:info@steitz-praezision.de?subject=Händlerregistrierung" class="btn btn--outline-dark">Händler werden</a>
+        </div>
+
+        <div style="margin-top:2rem; padding-top:2rem; border-top:1px solid var(--gray-light);">
+          <h3 style="margin-bottom:1rem;">Infopaket &amp; Download</h3>
+          <p style="font-size:0.9rem; margin-bottom:1rem;">
+            Fordern Sie unser kostenloses Informationspaket mit Datenblatt, Anwendungsbeispielen
+            und Preisliste an – einfach über das Kontaktformular.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" style="display:inline-flex;">
+          <span class="nav__logo-main">steitz<span style="color:#C8102E;">.</span></span>
+          <span class="nav__logo-sub">Präzisionstechnik</span>
+        </a>
+        <p class="footer__tagline">Innovative Gewindeprüfsysteme und Sondermaschinen. Das Original seit 1994.</p>
+      </div>
+      <div class="footer__col">
+        <h4>OmniTURN</h4>
+        <ul>
+          <li><a href="omniturn.html#grundlagen">Gewindeprüfung</a></li>
+          <li><a href="omniturn.html#produkte">Produkte</a></li>
+          <li><a href="omniturn.html#zubehoer">Zubehör</a></li>
+          <li><a href="omniturn.html#anwendungen">Anwendungen</a></li>
+          <li><a href="omniturn.html#technische-daten">Technische Daten</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="sondermaschinen.html">Sondermaschinen</a></li>
+          <li><a href="unternehmen.html">Über uns</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="agb.html">AGB</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="rechtlicher-hinweis.html">Rechtlicher Hinweis</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2025 steitz präzisionstechnik. Alle Rechte vorbehalten.</span>
+      <div class="footer__legal">
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
